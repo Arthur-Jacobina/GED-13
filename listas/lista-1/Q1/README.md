@@ -1,4 +1,4 @@
-# Q1
+# P1
 
 To solve this problem, the following approach will be used:
 
@@ -27,26 +27,26 @@ rnorm(x, mean=mu, sd=sigma)
 
 ## Code & answers:
 
-### a P(X > 120) ans = 0.04779
+### (a) P(X > 120) ans = 0.04779
 ```R
 m <- 100
 var <- 12
 Pa <- 1- pnorm(120, mean = m, sd = var) 
 ```
 
-### b P(82 < X < 118) ans = 0.86638
+### (b) P(82 < X < 118) ans = 0.86638
 ```R
 Pb <- pnorm(118, mean = m, sd = var) - pnorm(82, mean = m, sd = var)
 ```
 
-### c Y = 3*X + 50 P(300 < Y < 400) ans = 0.83513
+### (c) Y = 3*X + 50 P(300 < Y < 400) ans = 0.83513
 ```R
 mY <- 3*m + 50
 varY <- 3*var
 Pc <- pnorm(400, mean = mY, sd = varY) - pnorm(300, mean = mY, sd = varY)
 ```
 
-### d W = X^2 - 50X P(W < 5000) ans = 0.50000
+### (d) W = X^2 - 50X P(W < 5000) ans = 0.50000
 ```R
 n <- 100000
 X <- rnorm(n, mean = m, sd = var)

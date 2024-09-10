@@ -1,4 +1,4 @@
-# P3
+# P4
 
 To solve this problem, the following approach will be used:
 

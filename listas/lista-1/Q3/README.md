@@ -9,7 +9,7 @@ For part (a), I will utilize the `punif` function in R. This function calculates
 The `punif` function is structured as follows:
 
 ```R
-pnorm(x, min = mu, max = sigma)
+punif(x, min = mu, max = sigma)
 ```
 ## (b) - (f) using `Monte Carlo Simulation`
 
